@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #b61e2e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5ad693;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.cta-button {
+    background-color: #b61e2e;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.rede button {
+    color:  #b61e2e;
+    margin-left: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: #f9f9f9;
+}
+
+.mission {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mission .text-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.mission .video {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Media Queries para Responsividade */
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Esconde o menu em telas pequenas */
+    }
+
+    .cta-button {
+        margin: 10px 0;
+    }
+
+    .mission {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission .text-content, .mission .video {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo {
+        font-size: 30px;
+    }
+
+    .cta-button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
